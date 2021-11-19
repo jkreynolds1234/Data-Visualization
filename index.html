@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Top-Fifty Spotify '2019'</title>
+</head>
+  <meta charset="utf-8">
+  <button onclick="updateAll('Beats_per_minute')">Beats per minute</button>
+<button onclick="updateAll('Energy')">Energy</button>
+<button onclick="updateAll('Danceability')">Danceability</button>
+<button onclick="updateAll('Acousticness')">Acousticness</button>
+<button onclick="updateAll('Liveness')">Liveness</button>
+<button onclick="updateAll('Valence')">Valence</button>
+<body>
+    <script src="./scripts/d3/d3.v4.js"></script>
+    <div id = "data_viz"></div>
+    <div id = "donut"></div>
+    <div id="tooltip" class= "hidden">
+        <p><strong><font size = "4"><span id="value1"></span></font></strong></p>
+        <p><strong><u><font size = "2.5"><span id="value2"></span></font></u></strong></p>
+        <p><span id="value3"></span></p>
+        <p><span id="value4"></span></p>
+        <p><span id="value5"></span></p>
+    </div>
+
+    <div id = "treemap"></div>
+    <div id= "tooltipT"></div>
+    <script type='text/javascript' >var song = ""; </script>
+    <script type='text/javascript' >var newCoord = function () { return false;}; </script>
+    <script type='text/javascript' >var returnCoord = function () { return false;}; </script>
+    <script src="./scripts/loliPop.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/spotifyData.js"></script>
+    <script src="./scripts/treeMap.js"></script>
+    <script src="./scripts/radial_chart.js"></script>
+    <script src="https://d3js.org/d3-brush.v1.min.js"></script>
+
+
+
+</body>
+
+
+</html>
